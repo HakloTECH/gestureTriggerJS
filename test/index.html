@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>gesture test</title>
+    <script src="../index.js"></script>
+    <style>
+      canvas{
+        margin:0;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas></canvas>
+    <script>
+      let gestureCanvas = document.querySelector('canvas');
+      const fitCanvasToScreen = () =>{
+        gestureCanvas.width = document.body.clientWidth;
+        gestureCanvas.height = document.body.clientHeight;
+      }
+      fitCanvasToScreen();
+      window.addEventListener('resize',e=>{
+        fitCanvasToScreen();
+      })
+      GestureTrigger.init(gestureCanvas);
+    </script>
+  </body>
+</html>
