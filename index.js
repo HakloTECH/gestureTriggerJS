@@ -52,7 +52,6 @@ const handleEnd = e =>{
 const handleCancel = e =>{
 
 }
-
 GestureTrigger = {
   /**
    * 
@@ -62,3 +61,4 @@ GestureTrigger = {
   addTrigger: addTrigger,
   VTI: VTI
 }
+module.export = GestureTrigger;
