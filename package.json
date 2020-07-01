@@ -1,0 +1,24 @@
+{
+  "name": "gesturetriggerjs",
+  "version": "1.0.0",
+  "description": "a js library which makes it able to trigger gestures",
+  "scripts": {
+    "build": "npm-run-all -p build:*",
+    "build:css": "cp dialog-polyfill.css dist/dialog-polyfill.css",
+    "build:esm": "rollup index.js --file dist/dialog-polyfill.esm.js --format esm",
+    "build:umd": "rollup index.js --file dist/dialog-polyfill.js --format umd --name dialogPolyfill"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hakqlo/gestureTriggerJS.git"
+  },
+  "author": "Hakqlo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hakqlo/gestureTriggerJS/issues"
+  },
+  "homepage": "https://github.com/Hakqlo/gestureTriggerJS#readme",
+  "devDependencies": {
+    "rollup": "^2.18.1"
+  }
+}
