@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/Hakqlo/gestureTriggerJS#readme",
   "devDependencies": {
-    "rollup": "^2.18.1"
+    "rollup": "^3.29.5"
   }
 }
